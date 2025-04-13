@@ -1,18 +1,30 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-
+import { BryntumGanttModule } from '@bryntum/gantt-angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
+import { FirstGanttComponent } from './first-gantt/first-gantt.component';
+import { SecandGanttComponent } from './secand-gantt/secand-gantt.component';
+import { ThirdGanttComponent } from './third-gantt/third-gantt.component';
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, FirstGanttComponent, SecandGanttComponent, ThirdGanttComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BryntumGanttModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatCardModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]  
 })
-export class AppModule { }
+export class AppModule {}

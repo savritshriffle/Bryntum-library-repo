@@ -1,0 +1,29 @@
+<mat-card class="container">
+    <div *ngFor="let task of tasks; let i = index">
+      <mat-form-field appearance="outline">
+        <mat-label>Task Name</mat-label>
+        <input matInput [(ngModel)]="task.name" (ngModelChange)="updateTask(task)">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Start Date</mat-label>
+        <input matInput type="date" [(ngModel)]="task.startDate" (ngModelChange)="updateTask(task)">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>End Date</mat-label>
+        <input matInput type="date" [(ngModel)]="task.endDate" (ngModelChange)="updateTask(task)">
+      </mat-form-field>
+  
+      <button mat-raised-button color="warn" (click)="deleteTask(i)">Delete</button>
+  
+      <div class="gantt-bar"
+           [style.left]="getLeft(task.startDate) + 'px'"
+           [style.width]="getWidth(task.startDate, task.endDate) + 'px'">
+        {{ task.name }}
+      </div>
+    </div>
+  
+    <button mat-raised-button color="primary" (click)="addTask()">Add Task</button>
+  </mat-card>
+  

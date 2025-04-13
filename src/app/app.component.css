@@ -1,0 +1,23 @@
+.container {
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 20px;
+    background: #fafafa;
+  }
+  
+  mat-form-field {
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  .gantt-bar {
+    position: relative;
+    background-color: #3f51b5;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    padding-left: 10px;
+    margin: 10px 0;
+  }
+  
