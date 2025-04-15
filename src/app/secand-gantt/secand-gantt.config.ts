@@ -1,12 +1,15 @@
 
+
     export const ganttConfig = {
+   
     startDate: new Date(2025, 0, 1),
     endDate: new Date(2025, 1, 1),
     viewPreset: 'weekAndDay',
     features: {
         taskTooltip: true,
         dependencies: true,
-        TaskDrag: true
+        
+       
     },
     taskRenderer({ taskRecord}: {taskRecord: any} ) {
         return {
@@ -16,12 +19,14 @@
     },
     columns: [
         { type: 'name', field: 'name', text: 'Task Name', width: 250 },
-        { type: 'startdate', text: 'Start' },
-        { type: 'duration', text: 'Duration' }
+        { type: 'startdate', text: 'StartDate', field:'start date'},
+        { type: 'enddate', text:'EndDate', filed: 'end date'},
+        
     ]
     };
 
     export const projectConfig = {
+    outerHeight: '100%',
     tasksData: [
         {
         id: 1,
@@ -76,5 +81,12 @@
     ],
     dependenciesData: [
         { fromTask: 2, toTask: 7 }
-    ]
+    ],
+    // gantt : new Gantt({
+    //     columns: [
+    //         { type: 'name' , text: 'Task Data', filterable: true},
+    //         { type: 'date', text: 'Start Date', field: 'start date', filterable: true},
+    //         { type: 'date', text:'End Date', field: 'end date', filterable: true}
+    //     ]
+    // })
     };

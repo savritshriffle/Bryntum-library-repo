@@ -27,6 +27,7 @@
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/@bryntum/gantt/gantt.material.css",
+              "node_modules/@bryntum/gantt/gantt.stockholm.css",
               "src/styles.css"
             ],
             "scripts": ["node_modules/@bryntum/gantt/gantt.module.js"]
