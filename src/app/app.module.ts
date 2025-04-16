@@ -13,8 +13,9 @@ import { SecandGanttComponent } from './secand-gantt/secand-gantt.component';
 import { ThirdGanttComponent } from './third-gantt/third-gantt.component';
 import { BryntumFirstComponent } from './bryntum-first/bryntum-first.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NewRepoComponent } from './new-repo/new-repo.component';
 @NgModule({
-  declarations: [AppComponent, FirstGanttComponent, SecandGanttComponent, ThirdGanttComponent, BryntumFirstComponent],
+  declarations: [AppComponent, FirstGanttComponent, SecandGanttComponent, ThirdGanttComponent, BryntumFirstComponent, NewRepoComponent],
   imports: [
     BrowserModule,
     BryntumGanttModule,
