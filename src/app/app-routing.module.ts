@@ -9,10 +9,7 @@ const routes: Routes = [
     path:'first-gantt',
     component: FirstGanttComponent
   },
-  {
-    path:'secand-gantt',
-    component: SecandGanttComponent
-  },
+  
   {
     path:'third-gantt',
     component: ThirdGanttComponent
