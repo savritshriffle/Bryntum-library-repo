@@ -26,7 +26,14 @@ export class BryntumFirstComponent {
        
             
                 { id : 2, name : 'Proof-read docs', startDate : '2017-01-02', endDate : '2017-01-05' },
+                { id : 3, name : 'Release docs', startDate : '2017-01-09', endDate : '2017-01-10' },
+                { id : 2, name : 'Proof-read docs', startDate : '2017-01-02', endDate : '2017-01-05' },
+                { id : 3, name : 'Release docs', startDate : '2017-01-09', endDate : '2017-01-10' },
+                { id : 2, name : 'Proof-read docs', startDate : '2017-01-02', endDate : '2017-01-05' },
                 { id : 3, name : 'Release docs', startDate : '2017-01-09', endDate : '2017-01-10' }
+                { id : 2, name : 'Proof-read docs', startDate : '2017-01-02', endDate : '2017-01-05' },
+                { id : 3, name : 'Release docs', startDate : '2017-01-09', endDate : '2017-01-10' }
+            
             
         
     ],

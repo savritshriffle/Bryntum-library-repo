@@ -12,6 +12,7 @@ import { FirstGanttComponent } from './first-gantt/first-gantt.component';
 import { SecandGanttComponent } from './secand-gantt/secand-gantt.component';
 import { ThirdGanttComponent } from './third-gantt/third-gantt.component';
 import { BryntumFirstComponent } from './bryntum-first/bryntum-first.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [AppComponent, FirstGanttComponent, SecandGanttComponent, ThirdGanttComponent, BryntumFirstComponent],
   imports: [
@@ -22,7 +23,8 @@ import { BryntumFirstComponent } from './bryntum-first/bryntum-first.component';
     MatInputModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatCardModule
+    MatCardModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
