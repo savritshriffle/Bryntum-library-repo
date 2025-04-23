@@ -1,6 +1,19 @@
-<p>bryntum-first works!</p>
+
+<div style="height: 100vh;">
+<bryntum-gantt-project-model
+    
+    #ganttProject
+    [autoSetConstraints]="projectProps.autoSetConstraints!"
+    [dependencie]="projectProps.dependenciesData!"
+    [tasks]="projectProps.tasksData!"
+    [autoLoad]="projectProps.autoLoad!"
+
+></bryntum-gantt-project-model>
 <bryntum-gantt
-[project]='project'
+
+    #gantt
+    [columns]="ganttProps.columns!"
+    [project]="ganttProject!"
+    
 ></bryntum-gantt>
-
-
+</div>
