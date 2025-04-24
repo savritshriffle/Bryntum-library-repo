@@ -8,7 +8,7 @@ import { PercentBar } from '@bryntum/gantt';
   templateUrl: './bryntum-first.component.html',
   styleUrls: ['./bryntum-first.component.css']
 })
-export class BryntumFirstComponent  implements OnInit{ 
+export class BryntumFirstComponent  implements OnInit , AfterViewInit { 
   ganttProps = ganttProps;
   projectProps = projectProps;
 
@@ -21,17 +21,33 @@ export class BryntumFirstComponent  implements OnInit{
      value.draggable = false;
      console.log( value.percentDone)
     
-     
-   })
+    //  console.log(this.ganttComponent)
 
-   this.ganttProps.ignoreDomEventsWhileScrolling = false
-   
-  
+    })
+    
+    
+    
+    
   }
+  ngAfterViewInit(): void {
+  //  this.ganttComponent.instance.features.percentBar.disabled = true
+  // console.log(this.ganttComponent);
 
+  this.ganttComponent.instance.onPercentBarDrag = (event: any) => {
+    // event.moveUnblocked = false;
+    // debugger
+     console.log(event)
+    //  enableCellContextMenu
+    //  enableHeaderContextMenu
+
+    console.log(this.ganttComponent.instance)
+    this.ganttComponent.instance.onMouseOut = (event) =>{}
+    }
+  }
+}
  
   
   
 
-}
+
 

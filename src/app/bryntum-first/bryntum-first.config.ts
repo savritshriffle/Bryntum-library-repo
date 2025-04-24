@@ -24,6 +24,7 @@ autoLoad: true,
 
 
 export const ganttProps : BryntumGanttProps  = {
+    // headerZoomFeature: false,
     columns: [
      
         { type: 'name', field: 'name', text: 'Task Name', width: 250,},
